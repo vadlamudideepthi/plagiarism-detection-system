@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <h1>🔍 Plagiarism Detection System</h1>
+
+    <p class="subtitle">
+        Compare two texts and check their similarity
+    </p>
+
+    <div class="text-area-container">
+
+        <div class="box">
+            <h3>Original Text</h3>
+
+            <textarea id="text1"
+                placeholder="Enter the original text..."></textarea>
+        </div>
+
+        <div class="box">
+            <h3>Text to Check</h3>
+
+            <textarea id="text2"
+                placeholder="Enter the text you want to check..."></textarea>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="checkPlagiarism()">
+            Check Plagiarism
+        </button>
+
+        <button class="clear-btn" onclick="clearText()">
+            Clear
+        </button>
+
+    </div>
+
+    <div class="result">
+
+        <h2>📊 Result</h2>
+
+        <p id="resultText">
+            Enter two texts and click "Check Plagiarism".
+        </p>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+    </div>
+
+    <div class="examples">
+
+        <h3>Try Example</h3>
+
+        <button onclick="loadExample()">
+            Load Sample Text
+        </button>
+
+    </div>
+
+    <div class="info">
+
+        <h3>How It Works</h3>
+
+        <p>
+            The system compares the words in both texts and calculates
+            a similarity percentage. A higher percentage indicates
+            that the texts contain more similar words.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
